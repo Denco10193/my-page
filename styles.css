@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+h1 {
+    font-size: 12px;
+    line-height: 64px;
+    color: #222;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #060605;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    margin-left: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:inherit;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    background-color: antiquewhite;
+    background-size: cover;
+    background-position: top 10% right 0;
+    width: 100%;
+}
+
+/* Header start */
+
+.logo {
+    width: 50px;
+    height: 40px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 50px;
+    background-color: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: #088178;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* Home page */
+
+#hero {
+    background-image: url("Images/background/Farmapram-768x510.jpg");
+    background-size: cover;
+    background-position: top 250% right 0;
+    width: 100%;
+    padding-right: 100px;
+    padding-top: 250px;
+    color: #66661a;
+    display: flex;
+    align-items: flex-start
+    flex-direction: column;
+    justify-content: center;
+}
+
+#hero .website-name {
+    color: hsl(26, 81%, 35%);
+    font-weight: 900;
+    margin-top: -150px;
+    text-align: right;
+    font-size: 50px;
+    margin-right: -10px;
+    font-weight: 500;
+}
+
+#feature .fe-box {
+    margin: 20px 50px 30px 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+}
+
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box img {
+    border-radius: 50%;
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+
+.products-grid {
+    color: blue;
+    text-align: center;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+#featured-products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products {
+    display: inline-block;
+}
+
+.items {
+    width: 400px;
+    padding: 20px;
+    margin: 2px;
+    text-align: center;
+}
+
+.product-name {
+    color: red;
+    text-align: center;
+    margin-top: -35px;
+    padding-left: 20px;
+}
+
+.uses {
+    text-align: center;
+}
+
+.price {
+    text-align: center;
+}
+
+#about {
+    margin: 30px;
+    padding-top: 20px;
+    text-align: center;
+    text-decoration: #060605;
+}
+
+.title {
+    color: red;
+    padding-top: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.customer-care {
+    width: 100px;
+    height: 100px;
+  }
+
+  .customer-care-services {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .whatsapp {
+    color: #169e8e;
+    display: inline-block;
+    margin-right: 70px;
+    margin-left: 370px;
+    font-size: 70px;
+  }
+  
+  .telegram {
+    color: #229ed9;
+    display: inline-block;
+    font-size: 70px;
+    margin-left: 250px;
+  }
+
+  /* Media quries */
+
+  /* Small Devices (portrait tablets and large phones, 480px and up) */
+
+  @media only screen and (min-width: 480px) 
+  and (max-width: 680px) {
+
+    body {
+        background-color: white;
+    }
+
+    #hero {
+        background-image: url("Images/background/Farmapram-768x510.jpg");
+        background-size: cover;
+        background-position: top 350% right 0;
+        width: 110%;
+        text-decoration: underline;
+        padding-right: 100px;
+        padding-top: 20px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap
+        text-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+    } 
+
+    #hero .website-name {
+        color: hsl(0, 3%, 6%);
+        font-weight: 900;
+        margin-top: 50px;
+        text-align: center;
+        font-size: 30px;
+        margin-right: 30px;
+        font-weight: 900;
+    }
+
+    .products-grid {
+        white-space: nowrap;
+        color: blue;
+        text-align: center;
+        padding: 20px;
+        text-decoration: underline;
+    }
+
+    .whatsapp, .telegram {
+        color: #169e8e;
+        display: inline-block;
+        margin-right: 10px;
+        margin-left: 150px;
+        font-size: 70px;
+    }
+
+    .section-p1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    #feature .fe-box {
+        margin: -20px 15px 30px 1px;
+        width: 100px;
+        text-align: center;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+    }
+
+    #feature .fe-box img {
+        display: flexbox;
+        border-radius: 50%;
+        padding-left: 10px;
+        width: 100px;
+        height: fit-content;
+    }
+    
+    .items {
+        display: inline-block;
+        padding-left: 120px;
+        padding-top: 10px;
+        width: 350px;
+
+    }
+
+    .uses {
+        padding-left: 70px;
+    }
+}
+
+/* Small devices (landscape tablets and iPads, 680px and up) */
+
+@media only screen and (min-width: 680px) 
+and (max-width: 768px) {
+    body {
+        background-color: #22d984;
+    }
+
+    #hero {
+        background-image: url(Images/background/Mexican-Xanax.webp);
+        background-size: cover;
+        background-position: top 245% right 0;
+        width: 100%;
+        padding-right: 100px;
+        padding-top: 30px;
+        text-decoration: underline;
+    }
+
+    #hero, .intro {
+        color: rgb(19, 2, 2);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 20px;
+        text-shadow: #060605;
+        font-style: italic;
+    }
+
+    #hero .website-name {
+        color: hsl(26, 81%, 35%);
+        font-weight: 900;
+        margin-top: -15px;
+        text-align: right;
+        font-size: 50px;
+        margin-right: -10px;
+        font-weight: 500;
+    }
+    
+
+    #featured-products {
+        margin-left: 30px;
+        margin-right: 50px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .products {
+        display: inline-block;
+    }
+    
+    .items {
+        width: 250px;
+        padding: 20px;
+        margin: 2px;
+        text-align: center;
+    }
+
+    .uses {
+        font-size: 12px;
+        margin-right: 20px;
+        text-wrap: wrap;
+    }
+
+    .whatsapp {
+        color: #169e8e;
+        display: inline-block;
+        margin-right: 70px;
+        margin-left: 250px;
+        font-size: 70px;
+      }
+      
+      .telegram {
+        color: #229ed9;
+        display: inline-block;
+        font-size: 70px;
+        margin-left: 25px;
+      }
+    
+      #feature .fe-box {
+        margin: 20px 15px 30px 1px;
+        width: 100px;
+        text-align: center;
+        box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+        border: 1px solid #cce7d0;
+        border-radius: 4px;
+    }
+
+    #feature .fe-box img {
+        display: flexbox;
+        border-radius: 50%;
+        padding-left: 10px;
+        width: 100px;
+        height: fit-content;
+    }
+}
